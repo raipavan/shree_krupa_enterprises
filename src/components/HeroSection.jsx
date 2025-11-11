@@ -1,5 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
+import { Link } from "react-router-dom";
 
 export default function HeroSection() {
   return (
@@ -14,12 +15,16 @@ export default function HeroSection() {
           <p className="text-lg md:text-xl mb-6">
             Shreekrupa Invertor Battery Distributor — Trusted since 1998
           </p>
-          <a
-            href="/products"
-            className="bg-yellow-400 text-blue-900 font-semibold px-6 py-3 rounded-full hover:bg-yellow-300 transition"
-          >
-            Explore Products
-          </a>
+
+            <Link
+                  to="/products"
+                  className="bg-yellow-400 text-blue-900 font-semibold px-6 py-3 rounded-full hover:bg-yellow-300 transition"
+                >
+                   Explore Products
+                </Link>
+         
+
+
         </div>
 
         {/* RIGHT IMAGE SECTION */}
