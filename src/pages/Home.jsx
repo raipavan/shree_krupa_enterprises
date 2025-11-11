@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
 import HeroSection from "../components/HeroSection";
+import Testimonals from "../components/Testimonals";
 
 export default function Home() {
   return (
-    <div className="text-center py-20 bg-gradient from-blue-800 to-blue-500 text-white">
+    <div className="text-center py-20  ">
      <div>
       <HeroSection />
     </div>
@@ -16,6 +17,11 @@ export default function Home() {
         Contact Us
       </Link>
       </div>
+
+      <div>
+        <Testimonals/>
+      </div>
     </div>
+    
   );
 }
